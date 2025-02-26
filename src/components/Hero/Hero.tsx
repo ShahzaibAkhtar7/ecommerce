@@ -15,16 +15,16 @@ export default function Hero() {
   };
 
   return (
-    <div className="relative w-full h-[1080px] max-w-[1920px] mx-auto">
+    <div className="relative w-full h-screen max-w-[1920px] mx-auto flex items-center justify-center px-4 sm:px-6 lg:px-8">
       <img 
         src="/Images/hero.png" 
         alt="Hero Background" 
-        className="absolute inset-0 w-full h-full object-cover rounded-2xl"
+        className="absolute inset-0 w-full h-full object-cover rounded-2xl" 
       />
-      <div className="absolute bottom-10 left-0 right-0 flex justify-center">
+      <div className="absolute bottom-10 left-0 right-0 flex justify-center px-4 sm:px-0">
         <motion.button
           onClick={handleClick}
-          className="w-1/2 py-4 relative text-white text-lg font-semibold rounded-lg shadow-lg overflow-hidden transition-transform transform hover:scale-105 bg-yellow-500"
+          className="w-full max-w-xs sm:max-w-md md:max-w-lg lg:max-w-xl py-3 sm:py-4 relative text-white text-base sm:text-lg font-semibold rounded-lg shadow-lg overflow-hidden transition-transform transform hover:scale-105 bg-yellow-500"
           whileTap={{ scale: 0.95 }}
         >
           <motion.div
