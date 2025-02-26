@@ -5,7 +5,7 @@ import Cart from './pages/Cart';
 import Checkout from './pages/Checkout';
 import Navbar from './components/Nav/Navbar';
 import Footer from './components/Footer/Footer';
-import ContactForm from './components/Contact/ContactForm';
+import Contact from './pages/Contact';
 function App() {
   
 
@@ -18,7 +18,7 @@ function App() {
           <Route path="/products" element={<Products />} />
           <Route path="/cart" element={<Cart cartItems={[]} />} />
           <Route path="/checkout" element={<Checkout />} />
-          <Route path="/Contact" element={<ContactForm />} />
+          <Route path="/Contact" element={<Contact />} />
         </Routes>
         <Footer />/
       </Router>
